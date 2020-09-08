@@ -1,0 +1,81 @@
+<html>
+
+  <head>
+
+<link rel="stylesheet" type="text/css" href="css/product_landing_page.css">
+
+<style>
+/*added style element here because test requires CSS to be on same sheet*/
+/* For desktop, rest of css code in stylesheet. */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+</style>
+
+  </head>
+
+<body>
+
+  <center>
+     <header id="header">
+       <img id="header-img" src="https://cdn.freebiesupply.com/logos/large/2x/shure-logo-png-transparent.png"/>
+       <nav id="nav-bar">
+          <a class="nav-link" href="#learn-more">Learn More</a>
+          <a class="nav-link" href="#request-coupon">Resquest Coupon</a>
+          <a class="nav-link" href="#buy-on-amazon">Buy On Amazon</a>
+       </nav>
+     </header>
+  </center>
+
+    <center>
+      <h1 id="title">Shure SM7B Studio Microphone</h1>
+      <section id="learn-more">
+        <iframe id="video" src="https://www.youtube.com/embed/vD2_qSSP5fE"
+        width="960" height="720" frameborder="0" allowfullscreen></iframe>
+      </section>
+     </center>
+
+     <center>
+        <section id="buy-on-amazon">
+             <p id="HowItWorks">How it Works</p>
+             <p id="Para">The wide-range frequency response of the SM7B preserves the natural beauty of the sound it captures.<br>
+              With its detailed audio profile, words may travel far, but they always arrive at their destination with quality and clarity intact.</p>
+          <img src="images/mic.png" alt="pic of Microphone">
+        </section>
+     </center>
+
+    <center>
+      <section id="request-coupon">
+        <form id=form action="/https://www.freecodecamp.com/email-submit">
+          <input id="email" type="email" placeholder="Email" type=submit name="email"></input>
+          <input id="submit" type="submit"></input>
+        </form>
+      </section>
+    </center>
+
+</body>
+
+
+<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
